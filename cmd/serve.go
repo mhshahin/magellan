@@ -23,11 +23,6 @@ func serve() {
 		panic(err)
 	}
 
-	// tile38, err := config.InitializeTile38(cfg.Tile38)
-	// if err != nil {
-	// 	panic(err)
-	// }
-
 	redisClient, err := config.InitializeRedis(cfg.Redis)
 	if err != nil {
 		panic(err)
